@@ -7,4 +7,6 @@ export default defineConfig({
   server: {
     open: true,
   },
+  root: 'src',
+  publicDir: '../public',
 })
