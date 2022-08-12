@@ -6,11 +6,11 @@ export default class extends Controller {
   }
 
   connect() {
-    console.log('Counter controller connected', this.element)
+    console.log('Counter controller connected')
   }
 
   disconnect() {
-    console.log('Counter controller disconnected', this.element)
+    console.log('Counter controller disconnected')
   }
 
   countValueChanged() {

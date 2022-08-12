@@ -7,12 +7,12 @@ export default class extends Controller {
   }
   
   connect() {
-    console.log('Hello controller connected', this.element)
+    console.log('Hello controller connected')
     this._checkValidity()
   }
   
   disconnect() {
-    console.log('Hello controller disconnected', this.element)
+    console.log('Hello controller disconnected')
   }
   
   greet() {
