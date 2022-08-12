@@ -36,18 +36,20 @@
         ></button>
       </div>
       <form class="flex max-w-xs mx-auto" data-controller="hello">
-        <label for="name" class="sr-only">
+        <label for="your-name" class="sr-only">
           Your Name
         </label>
         <input
-          id="name"
+          id="your-name"
           type="text"
           placeholder="Enter your name"
           class="border border-r-0 rounded-l p-2 flex-1"
-          data-hello-target="name"
+          data-hello-target="input"
+          data-action="keyup->hello#handleKeyup"
         >
         <button
-          class="bg-sky-600 hover:bg-sky-800 text-white px-4 py-2 rounded-r"
+          class="bg-sky-600 hover:bg-sky-800 text-white px-4 py-2 rounded-r disabled:bg-gray-300 disabled:cursor-not-allowed"
+          data-hello-target="button"
           data-action="hello#greet:prevent"
         >
           Greet
