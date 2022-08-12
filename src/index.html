@@ -7,32 +7,29 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app">
-      <div class="flex gap-2 items-center">
+    <div id="app" class="mx-auto max-w-7xl p-8 space-y-8 text-center">
+      <div class="flex gap-2 items-center text-gray-400 text-3xl">
         <a href="https://vitejs.dev">
-          <img src="/vite.svg" class="logo" alt="Vite logo" />
+          <img src="/vite.svg" class="h-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #646cffaa" alt="Vite logo" />
         </a>
         +
         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-          <img src="/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
+          <img src="/javascript.svg" class="h-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #f7df1eaa" alt="JavaScript logo" />
         </a>
         +
         <a href="https://stimulus.hotwired.dev/">
-        <img src="/stimulus.svg" class="logo stimulus" alt="Stimulus logo" />
+          <img src="/stimulus.svg" class="h-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #000000aa" alt="Stimulus logo" />
         </a>
         +
         <a href="https://tailwindcss.com/">
-          <img src="/tailwind.svg" class="logo tailwind" alt="Tailwind CSS logo" />
+          <img src="/tailwind.svg" class="h-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #38bdf8aa" alt="Tailwind CSS logo" />
         </a>
       </div>
-      <h1>Hello Vite!</h1>
-      <div class="card">
-        <button id="counter" type="button"></button>
+      <h1 class="font-medium text-6xl">Hello Vite!</h1>
+      <div class="flex justify-center">
+        <button id="counter" type="button" class="border rounded py-2 px-4 hover:bg-gray-100"></button>
       </div>
-      <p class="read-the-docs">
-        Click on the Vite logo to learn more
-      </p>
-      <form class="flex" data-controller="hello">
+      <form class="flex max-w-xs mx-auto" data-controller="hello">
         <label for="name" class="sr-only">
           Your Name
         </label>
@@ -40,11 +37,11 @@
           id="name"
           type="text"
           placeholder="Enter your name"
-          class="border border-r-0 p-2 flex-1"
+          class="border border-r-0 rounded-l p-2 flex-1"
           data-hello-target="name"
         >
         <button
-          class="bg-sky-700 text-white px-4 py-2"
+          class="bg-sky-600 hover:bg-sky-800 text-white px-4 py-2 rounded-r"
           data-action="hello#greet:prevent"
         >
           Greet
