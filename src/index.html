@@ -27,7 +27,13 @@
       </div>
       <h1 class="font-medium text-6xl">Hello Vite!</h1>
       <div class="flex justify-center">
-        <button id="counter" type="button" class="border rounded py-2 px-4 hover:bg-gray-100"></button>
+        <button
+          id="counter"
+          type="button"
+          data-controller="counter"
+          data-action="counter#increment"
+          class="border rounded py-2 px-4 hover:bg-gray-100"
+        ></button>
       </div>
       <form class="flex max-w-xs mx-auto" data-controller="hello">
         <label for="name" class="sr-only">
