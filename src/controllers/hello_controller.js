@@ -5,21 +5,21 @@ export default class extends Controller {
   static values = {
     'enabled': Boolean
   }
-  
+
   connect() {
     console.log('Hello controller connected')
     this._checkValidity()
   }
-  
+
   disconnect() {
     console.log('Hello controller disconnected')
   }
-  
+
   greet() {
     console.log(`Hello, ${this.name}!`)
     this.outputTarget.innerHTML = `Hello, ${this.name}!`
   }
-  
+
   handleKeyup() {
     this._checkValidity()
   }
@@ -39,7 +39,7 @@ export default class extends Controller {
   _enableButton() {
     this.buttonTarget.removeAttribute("disabled")
   }
-  
+
   _disableButton() {
     this.buttonTarget.setAttribute("disabled", "")
   }
