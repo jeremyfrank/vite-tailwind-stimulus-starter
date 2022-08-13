@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        xs: '480px',
+      },
       dropShadow: {
         logo: '0 0 2em var(--logo-color)',
       },
