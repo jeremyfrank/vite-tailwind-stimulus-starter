@@ -6,7 +6,7 @@ Simple project template for Vite with Tailwind CSS and Stimulus, based off of th
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/jeremyfrank/vite-tailwind-stimulus-starter?title=Vite%20+%20Tailwind%20+%20Stimulus%20Starter)
 
-![Production Build Output](public/build-output.png)
+![Production Build Output](public/build-output.avif)
 
 ```
 # npm || yarn || pnpm
