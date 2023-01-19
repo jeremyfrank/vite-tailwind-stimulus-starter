@@ -8,7 +8,7 @@
   </head>
   <body>
     <div id="app" class="mx-auto max-w-7xl p-8 space-y-8 text-center">
-      <div class="flex flex-wrap gap-2 items-center justify-center text-gray-400 text-3xl leading-none">
+      <div class="flex flex-wrap gap-2 items-center justify-center text-zinc-400 text-3xl leading-none">
         <a href="https://vitejs.dev">
           <img src="/vite.svg" class="w-24 p-6 will-change-filter hover:drop-shadow-logo" style="--logo-color: #646cffaa" alt="Vite logo" />
         </a>
@@ -32,11 +32,11 @@
           type="button"
           data-controller="counter"
           data-action="counter#increment"
-          class="border rounded py-2 px-4 hover:bg-gray-100"
+          class="border dark:border-zinc-500 rounded py-2 px-4 hover:bg-zinc-100 dark:hover:bg-zinc-700"
         ></button>
       </div>
       <form class="max-w-xs mx-auto" data-controller="hello">
-        <div class="flex">
+        <div class="flex gap-2">
           <label for="your-name" class="sr-only">
             Your Name
           </label>
@@ -44,12 +44,12 @@
             id="your-name"
             type="text"
             placeholder="Enter your name"
-            class="border border-r-0 rounded-l p-2 flex-1"
+            class="border dark:border-zinc-500 rounded p-2 flex-1"
             data-hello-target="input"
             data-action="keyup->hello#handleKeyup"
           >
           <button
-            class="bg-sky-600 hover:bg-sky-800 text-white px-4 py-2 rounded-r disabled:bg-gray-300 disabled:cursor-not-allowed"
+            class="bg-sky-600 hover:bg-sky-800 text-white px-4 py-2 rounded disabled:bg-zinc-300 disabled:text-zinc-500 dark:disabled:bg-zinc-700 disabled:cursor-not-allowed"
             data-hello-target="button"
             data-action="hello#greet:prevent"
           >
