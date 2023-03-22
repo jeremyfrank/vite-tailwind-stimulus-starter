@@ -11,7 +11,7 @@ Simple project template for Vite with Tailwind CSS and Stimulus, based off of th
 ```
 # npm || yarn || pnpm
 npm install
-npm dev
-npm build
-npm preview
+npm run dev
+npm run build
+npm run preview
 ```
